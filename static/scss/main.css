@@ -1,0 +1,173 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Syne Mono', monospace;
+}
+
+main {
+  min-height: 100vh;
+  background: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #12f112;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+header h2 {
+  color: #12f112;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  min-height: 80vh;
+  margin: 1rem auto;
+  padding: 1em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 61, 61, 0.7)), to(rgba(112, 112, 112, 0.1)));
+  background: linear-gradient(to right bottom, rgba(61, 61, 61, 0.7), rgba(112, 112, 112, 0.1));
+  -webkit-backdrop-filter: blur(2em);
+          backdrop-filter: blur(2em);
+  border-radius: 1em;
+}
+
+.container p {
+  text-align: center;
+}
+
+textarea {
+  border: none;
+  border-radius: 0.7em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(95, 95, 95, 0.7)), to(rgba(112, 112, 112, 0.1)));
+  background: linear-gradient(to right bottom, rgba(95, 95, 95, 0.7), rgba(112, 112, 112, 0.1));
+  padding: 1em;
+  color: whitesmoke;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+textarea.answer {
+  color: lime;
+}
+
+input.go {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 1em 2em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(95, 95, 95, 0.7)), to(rgba(112, 112, 112, 0.1)));
+  background: linear-gradient(to right bottom, rgba(95, 95, 95, 0.7), rgba(112, 112, 112, 0.1));
+  border-radius: 0.5em;
+  border: none;
+  color: #12f112;
+  font-size: 1rem;
+  text-align: center;
+}
+
+input.go:hover {
+  background: #212121;
+}
+
+#key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 30%;
+  padding: 1em 2em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(95, 95, 95, 0.7)), to(rgba(112, 112, 112, 0.1)));
+  background: linear-gradient(to right bottom, rgba(95, 95, 95, 0.7), rgba(112, 112, 112, 0.1));
+  border-radius: 0.5em;
+  border: none;
+  color: whitesmoke;
+}
+
+#key:focus {
+  outline: none;
+}
+
+span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+button.dec, button.enc {
+  text-align: center;
+  padding: 1em 1em;
+  margin: 1em 2em;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(40, 66, 39, 0.7)), to(rgba(112, 112, 112, 0.1)));
+  background: linear-gradient(to right bottom, rgba(40, 66, 39, 0.7), rgba(112, 112, 112, 0.1));
+  border-radius: 0.5em;
+  border: 7px;
+  color: #12f112;
+  font-size: 1rem;
+  border-color: whitesmoke;
+  border-style: solid;
+}
+
+button.dec:hover, button.enc:hover {
+  background: black;
+}
+
+@media screen and (max-width: 640px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container {
+    width: 95%;
+  }
+  #key {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

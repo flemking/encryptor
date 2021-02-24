@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../static/scss/main.css">
+    <title>This is Encryptor</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>This is Encryptor</h2>
+            <button class="dec" onclick="window.location.href='/decrypt'">Decrypt</button>
+        </header>
+        <form action="/" method="post">
+            <div class="container">
+                <p>...To encrypt you have to choose a key(interger) and type the text you want to encrypt, don't forget to save the encrypted text generated...</p>
+                <input type="number" name="key" id="key" placeholder="Enter the key here" autocomplete="off" min=1 max=25>
+                <textarea name="plaintext" id="plaintext" cols="30" rows="5" placeholder="Enter the text you want encrypt..." required></textarea>
+                <textarea class = "answer" name="encrypted" id="encrypted" cols="30" rows="2" placeholder="The encrypted text will appear here..." disabled>{{ encrypted }}</textarea>
+                <span class="note"></span>
+                <input class="go" type="submit" value="Encrypt">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

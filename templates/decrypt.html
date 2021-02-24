@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../static/scss/main.css">
+    <title>This is Encryptor</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h2>This is Decryptor</h2>
+            <button class="enc" onclick="window.location.href='/'">Encrypt</button>
+        </header>
+        <form action="/decrypt" method="post">
+            <div class="container">
+                <p>...To decrypt you have to enter the key(interger) and paste the text you want to decrypt...</p>
+                <input type="number" name="key" id="key" placeholder="Enter the key here" autocomplete="off" min=1 max=25>
+                <textarea name="plaintext_e" id="plaintext_e" cols="30" rows="5" placeholder="Enter the text you want decrypt..."></textarea>
+                <textarea class = "answer" name="decrypted" id="decrypted" cols="30" rows="2" placeholder="Decrypted text will appear here..." disabled>{{ decrypted }}</textarea>
+                <input class="go" type="submit" value="Decrypt">
+            </div>
+        </form>
+    </main>
+</body>
+</html>
